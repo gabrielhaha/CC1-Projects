@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Indie Flower', cursive; font-size: 24px; color: white;
+}
+body{
+
+	width: 100%;
+	background-image: url('pfo.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+.main ul{
+	float: right;
+	list-style-type: none;
+	margin: 25px;
+}
+.main ul li{
+	display: inline-block;
+}
+.main ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 20px;
+	border: transparent;
+	transition: 0.5s ease;
+	font-family: 'Mali'; font-size: 20px;font-weight: bold;
+}
+.main ul li a:hover{
+	background-color: #fff;
+	padding: 8px 15px;
+	color: #000;
+	transition: 0.5s ease;
+}
+.main ul li.active a{
+	background-color: #fff;
+	padding: 6px 15px;
+	color: #000;
+}
+.hed{
+	position: absolute;
+	top: 29%;
+	font-size: 30px;
+}
+.asd ul{
+	position: absolute;
+	top:55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.asd ul li{
+	list-style: none;
+}
+.asd ul li a{
+	display: block;
+	position: relative;
+	margin: 50px 80px;
+	transition: .5s;
+}
+.asd img:hover
+{
+	box-shadow: 20px 20px 20px rgba(0,0,0,.9);
+}
+h3 {
+	position: absolute;
+	top:0;
+	text-align: center;
+}

@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Indie Flower', cursive;font-size: 22px; color: white;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('fam1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: right;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: transparent;
+	transition: 0.06s ease;
+	font-family: 'Mali'; font-size: 20px;font-weight: bold;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+	transition: 0.5s ease;
+}
+ul li.active a{
+	background-color: #fff;
+	padding: 6px 15px;
+	color: #000;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    margin-left:auto;
+  margin-right: auto;
+}
+
+.container .box {
+	position: relative;
+  display: block;
+  width: 20px;
+  height: 10px;
+  margin-left:300px;
+  margin-right: 50px;
+  margin-bottom: 400px;
+  margin-top: 20px;
+
+}
+.container .box .imgBox img {
+	width: 545px;
+	height: 500px;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img {
+	transform: scale(1.2);
+}
+.container .box  .details{
+	position: absolute;
+	top: 200px;
+	bottom: 20px;
+	left: 4px;
+	right: 10px;
+	transform: scaleY(0);
+	transition: transform .5s;
+	width: 600px;
+}
+.container .box:hover  .details{
+	transform: scaleY(1);
+}
+.container .box  .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 7px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 10%;
+	color: white;
+	width: 545px;
+	margin-top: 50px;
+}
